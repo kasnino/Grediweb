@@ -30,7 +30,7 @@
                              <v-flex md12 sm12 pa-0 ma-0  xs12 class="row_grid">
                                 <v-layout wrap justify-center align-center pa-0 ma-0 class="container">
                                    <!-- Columna uno -->
-                                  <v-flex md3 sm3 p-0 ma-0  xs12 class="col_grid">
+                                  <v-flex md3 sm6 p-0 ma-0  xs12 class="col_grid">
                                      <v-layout wrap justify-center align-center pa-0 ma-0 class="items_filas--titulo">
                                        <span class="titulo_main">3 Days <span class="sub_titulo">Forecast</span></span>
                                      </v-layout>
@@ -57,16 +57,16 @@
                                                 <v-layout wrap justify-center  align-center pa-2 ma-0 class="items_filas">
                                                       <div class="cards">
                                                      <v-layout wrap justify-center align-center pa-1 ma-0 class="container">
-                                                    <v-flex md2 sm2 pa-2  ma-0  xs12 class="col_grid_interna">
+                                                    <v-flex md2 sm2 pa-2  ma-0  xs2 class="col_grid_interna">
                                                     </v-flex>
-                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs12 class="col_grid_interna texto_clima--interno">
+                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs5 class="col_grid_interna texto_clima--interno">
                                                       <div class="peque_text--titulo">Friday
                                                         <div class="peque_text">LLuvia</div>
                                                       </div>
                                                       
                                                     </v-flex>
-                                                     <v-flex md5 sm5  ma-0  xs12 class="col_grid_interna boton_flotante ">
-                                                       <div class="boton_tiempo">
+                                                     <v-flex md5 sm5  ma-0  xs5 class="col_grid_interna boton_flotante ">
+                                                       <div class="boton_tiempo_next">
                                                          <span class="linea_tiempo">31° / 27°</span>
                                                        </div>
                                                     </v-flex>
@@ -85,7 +85,7 @@
                                                       
                                                     </v-flex>
                                                      <v-flex md5 sm5  ma-0  xs12 class="col_grid_interna boton_flotante ">
-                                                       <div class="boton_tiempo">
+                                                       <div class="boton_tiempo_next">
                                                          <span class="linea_tiempo">31° / 27°</span>
                                                        </div>
                                                     </v-flex>
@@ -95,7 +95,7 @@
                                        </v-flex>
                                   </v-flex>
                                       <!-- Columna dos -->
-                                  <v-flex md3 sm3 p-0 m-0  xs12 class="col_grid">
+                                  <v-flex md3 sm6 p-0 m-0  xs12 class="col_grid">
                                      <v-layout wrap justify-center align-center pa-0 ma-0 class="items_filas--titulo">
                                        <span class="titulo_main">Place to <span class="sub_titulo">Visit</span></span>
                                      </v-layout>
@@ -105,30 +105,115 @@
                                           <v-img
                                           pa-5
                                           class=" pa-5 imagen_portada"
-                                          src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                          src="https://images.unsplash.com/photo-1562685477-b4ece6c9e8ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=358&q=80"
                                           max-width="100%"
                                           height="220px"
                                         >
+                                        
                                           </v-img>
                                 </div>
                                      </v-layout>
                                   </v-flex>
                                  
                                     <!-- Columna tres -->
-                                  <v-flex md3 sm3 p-0 m-0  xs12 class="col_grid">
+                                  <v-flex md3 sm6 p-0 m-0  xs12 class="col_grid">
                                       <v-layout wrap justify-center align-center pa-0 ma-0 class="items_filas--titulo">
+                                         <v-flex md6 sm6 p-0 m-0 xs12 class="col_grid">
                                        <span class="titulo_main"><span class="sub_titulo"> + Top Recursos</span></span>
+                                         </v-flex>
+                                          <v-flex md6 sm6 pa-1 m-0 justify-center align-center xs12 class="col_grid">
+                                             <v-layout wrap justify-center align-center pa-0 ma-0 class="items_filas--titulo">
+                                             <v-flex md3 sm3 pa-2  ma-0  xs3 class="col_avatar">
+                                                  <img
+                                                  class="imagen_avatar"
+                                                  src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                  max-width="100%"
+                                                  height="20px"/>
+                                               
+                                             </v-flex>
+                                             <v-flex md3 sm3 p-0  m-0  xs3 class="col_avatar">
+                                                <img
+                                                  class="imagen_avatar"
+                                                  src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                  max-width="100%"
+                                                  height="20px"/>
+                                             </v-flex>
+                                             <v-flex md3 sm3 p-0  m-0  xs3 class="col_avatar">
+                                                <img
+                                                  class="imagen_avatar"
+                                                  src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                  max-width="100%"
+                                                  height="20px"/>
+                                             </v-flex>
+                                             <v-flex md3 sm3 p-0  m-0  xs3 class="col_avatar">
+                                                <span>+</span>
+                                              </v-flex>
+                                             </v-layout>
+                                          </v-flex>
                                      </v-layout>
                                       <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_fila--img">
-                                         <v-layout wrap justify-center primary align-center pa-0 ma-0 class="items_filas">
-                                     </v-layout>
-                                      <v-layout wrap justify-center pink align-center pa-0 ma-0 class="items_filas">
-                                     </v-layout>
+                                        <v-flex md10 sm10 pa-0 mt-5  xs12 class="content_col">
+                                                  <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_filas_img">
+                                                    <div class="imagen_contenedor">
+                                                        <v-img
+                                                        pa-5
+                                                        class=" pa-5 imagen_portada"
+                                                        src="https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                        max-width="100%"
+                                                        height="85"
+                                                      >
+                                                        </v-img>
+                                                    </div>
+                                                    </v-layout>
+
+                                              <v-layout wrap justify-center mt-3  align-center pa-0 ma-1 class="items_filas_two">
+                                             <div class="imagen_contenedor">
+                                                        <v-img
+                                                        pa-5
+                                                        class=" pa-5 imagen_portada"
+                                                        src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                        max-width="100%"
+                                                        height="120"
+                                                      >
+                                                       <div class="boton_add__tiempo">
+                                                         <span>+</span>
+                                                       </div>
+                                                        </v-img>
+                                                    </div>
+                                              </v-layout>
+                                         </v-flex>
                                      </v-layout>
                                   </v-flex>
 
                                    <!-- Columna cuatro -->
-                                  <v-flex md3 sm3 p-0 m-0 black xs12 class="col_grid">
+                                  <v-flex md3 sm6 p-0 ma-0 xs12 class="col_grid">
+                                     <v-flex md12 sm12 pa-1 mt-1  xs12 class="content_col">
+                                                  <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_filas_img">
+                                                    <div class="imagen_contenedor">
+                                                        <v-img
+                                                        pa-5
+                                                        class=" pa-5 imagen_portada"
+                                                        max-width="100%"
+                                                        height="85"
+                                                      >
+                                                        </v-img>
+                                                    </div>
+                                                    </v-layout>
+
+                                              <v-layout wrap justify-center mt-3  align-center pa-0 ma-1 class="items_filas_two">
+                                             <div class="imagen_contenedor">
+                                                        <v-img
+                                                        pa-5
+                                                        class=" pa-5 imagen_portada"
+                                                        max-width="100%"
+                                                        height="150"
+                                                        style=" border: rgba(102, 102, 102, 0.23) 2px dashed;"
+                                                      >
+                                                      
+                                                        </v-img>
+                                                    </div>
+                                              </v-layout>
+                                         </v-flex>
                                   </v-flex>
                                 </v-layout>
                               
@@ -154,7 +239,7 @@ export default {
 
 .linea_tiempo{
    font-family: Poppins-SemiBold;
-   color:#FFFFFF;
+ 
    font-size: 11px;
   
 }
@@ -172,7 +257,7 @@ export default {
   height: 100%;
   background: #7f70ec;
   border-radius: 11px;
-  transform: scale(1.1);
+  transform: scale(1);
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -180,6 +265,49 @@ export default {
   display: flex;
   box-shadow: 0px 0px 7px 0px #666666a8;
   cursor: pointer;
+
+  span{
+      color:#FFFFFF;
+  }
+}
+.boton_add__tiempo{
+  width: 55px;
+  height: 100%;
+  background: #7f70ec;
+  border-radius: 25px;
+  transform: scale(1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  box-shadow: 0px 0px 12px 0px #666666a8;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+
+  span{
+    color:#FFFFFF;
+  }
+}
+.boton_tiempo_next{
+  background: #dce8f4;
+    width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  transform: scale(1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  box-shadow: 0px 0px 3px 0px #666666a8;
+  cursor: pointer;
+  span{
+color:#666666;
+  }
+  
 }
 
 .texto_clima--interno{
@@ -191,7 +319,7 @@ export default {
     line-height: 12px;
 }
 .cards{
-  width: 80%;
+  width: 85%;
   height: 100%;
   background: #FFFFFF;
   border-radius: 12px;
@@ -205,7 +333,10 @@ export default {
   height: 100%;
   position: absolute;
 }
-
+.content_col{
+    width: 100%;
+  height: 100%;
+}
 .peque_text--titulo{
   font-size: 12px;
   font-family: Poppins-SemiBold;
@@ -227,6 +358,15 @@ export default {
 .items_filas{
   width: 100%;
   height: 30%;
+}
+.items_filas_img{
+  width: 100%;
+  height: 35%;
+}
+.items_filas_two{
+   width: 100%;
+  height: 50%;
+  position: relative;
 }
 .items_fila--img{
     width: 100%;
@@ -265,7 +405,7 @@ export default {
     position: absolute;
     top: 45px;
     z-index: -1;
-   box-shadow: 0px 0px 9px 0px #666666a8;
+   box-shadow: 0px 0px 12px 0px #666666a8;
     border-top-right-radius: 10px;
      border-bottom-left-radius: 10px;
     border-bottom-right-radius: 23px;
@@ -317,6 +457,7 @@ export default {
 .imagen_portada{
   background-size: cover;
   border-radius: 25px;
+   box-shadow: 0px 0px 2px 0px #666666a8;
 }
 .imagen_contenedor{
   width: 100%;
@@ -335,6 +476,19 @@ export default {
 .col_grid{
   width: 100%;
   height: 100%;
+}
+.col_avatar{
+  width: 100%;
+  height: 25px;
+      position: relative;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px #666666a8;
+    cursor: pointer;
 }
 .fondo_main{
   background: #e1e8f0;
