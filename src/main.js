@@ -6,6 +6,9 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 
+import Header from '@/components/Header'
+Vue.component("header-app", Header);
+
 new Vue({
   router,
   store,
