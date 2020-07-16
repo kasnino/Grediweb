@@ -58,3 +58,113 @@ svg {
 body {
   font-size: calc(var(--font-size) * 1em)
 }
+
+.content_col {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.items_filas_img {
+  width: 100%;
+  height: 35%;
+}
+.imagen_contenedor--citys {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+
+.items_citys {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.boton_tiempo_next {
+  background: #dce8f4;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  transform: scale(1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  box-shadow: 0px 0px 3px 0px #666666a8;
+  cursor: pointer;
+  span {
+    color: #666666;
+  }
+}
+
+.city {
+  position: absolute;
+  margin-top: 14px;
+  border-radius: 22px;
+}
+.ciudad_contenedor {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  position: relative;
+  border-radius: 25px;
+}
+.items_filas_two {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.sub--txto {
+  font-family: Poppins-Regular;
+  font-size: 10px;
+  color: #e0e0e0;
+}
+.items_citys--text {
+  width: 100%;
+  height: 30%;
+  border-radius: 10px;
+}
+.peque_text {
+  font-size: 10px;
+  color: #666666;
+  font-family: Poppins-Regular;
+}
+
+.peque_text--titulo {
+  font-size: 12px;
+  font-family: Poppins-SemiBold;
+}
+.letra {
+  position: relative;
+  top: -8px;
+  font-size: 11px;
+  color: #66666678;
+  margin-top: -2px;
+}
+.row_grid {
+  width: 100%;
+  height: 50%;
+  padding: 0px;
+}
+.col_grid_citys {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.col_grid {
+  width: 100%;
+  height: 100%;
+}

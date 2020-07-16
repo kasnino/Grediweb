@@ -53,11 +53,8 @@
                     <span class="star star--6"></span>
           </label>
         </div>
-
-        
  </v-flex>   
-
-                    </v-flex>
+             </v-flex>
                     
         </v-layout>
         
