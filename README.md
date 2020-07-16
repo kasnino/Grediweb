@@ -1,6 +1,6 @@
-# Relatos Morados Web App
+# GrdiClima  Web App consumo de API https://openweathermap.org/
 
-Proyecto para crear relatos eroticos, compartir y contactar personas
+Proyecto para creado para consumir el api del clima, test ingreso empresa Grediweb
 
 ## Comenzando 🚀
 
@@ -25,20 +25,26 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-
-Vue JS
-Vuetify
-Webpack
-Sass
-Css
-
 ```
-Da un ejemplo
+Vue JS
+```
+```
+Vuetify
+```
+```
+Webpack
+```
+```
+Sass
+```
+```
+Css
 ```
 
 ### Instalación 🔧
-
+```
 npm install -g @vue/cli
+```
 
 
 ```
