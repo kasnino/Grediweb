@@ -201,7 +201,7 @@ background: linear-gradient(to right, #30CFD0 20%, #330867 100%);
 
  }
 .theme--light.v-toolbar.v-sheet {
-  background: var(--fondo_header);
+  background: var(--fondo_body);
 }
 
 .main_page{
@@ -212,7 +212,7 @@ background: linear-gradient(to right, #30CFD0 20%, #330867 100%);
 
 
 .color_header{
-  background: #e1e8f0;
+ background: var(--fondo_body);
   width: 100%;
   height: 100%;
 }

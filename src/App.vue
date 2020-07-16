@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <v-app>
+    <v-app id="thema" class="themalight">
          <header-app ></header-app> 
-      <v-container fluid ma-0 pa-0 fill-height>
+      <v-container class="container_app" fluid ma-0 pa-0 fill-height>
         <!-- Componente de header -->
      
        
@@ -34,6 +34,7 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "sass/globals";
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,8 +42,11 @@ export default {
   height: 100%;
   font-size: 16pt;
   font-family: Poppins-Regular;
+   background: var(--fondo_body);
   // background: cyan;
 }
+.container_app{ background: var(--fondo_body);}
+
 
 @font-face {
   font-family: Poppins-Regular;

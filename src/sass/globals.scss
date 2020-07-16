@@ -1,0 +1,60 @@
+/* CONTIENE:
+Imports
+Estilo de html, body y svg
+Tooltip
+Interacciones de hover -> .hvr .hvr-scale .hvr-float
+Estilo generals para tablas
+Estilos personalizados para tablas
+*/
+
+@import 'helpers/darktheme';
+
+
+
+  
+
+
+
+body, html {
+  margin: 0px; //Remueve bordes en blanco
+  padding: 0px;
+  background: var(--fondo_body);
+   //Corrige comportamiento por defecto de Vuetify de mostrar la barra de desplazamiento incluso si no hay desbordamiento
+   overflow-x: hidden;
+  font-size: 16px;
+  ::-webkit-scrollbar {display: none;}
+  @media (max-width: 600px) {
+    font-size: 0.9rem; //Disminuye el tamaño de la fuente para celulares
+     overflow-x: hidden;
+  }
+}
+ ::-webkit-scrollbar {
+	display: none;
+ }
+
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+ .autoscroll {
+   overflow: auto;
+}
+.instruccion {
+  font-weight: bold;
+}
+
+/**************************** CONTENIDO PARA CADA PAGINA ******************************/
+.cont_page{
+  padding: 0px 45px;
+}
+
+
+// 
+/**************************** Aumento y disminucion de las letras******************************/
+:root {
+  --font-size: 1;
+}
+
+body {
+  font-size: calc(var(--font-size) * 1em)
+}

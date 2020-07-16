@@ -1,0 +1,20 @@
+//Estos Temas modifican el background de toda la pagina
+//Son manejados directamente ṕor la etiqueta main ubicada en el archivo
+// App.vue 
+
+.themalight { 
+    --fondo_body: #e1e8f0;
+    --fondo_card: #FFFFFF;
+    --titulo-blue: #2C68A7;
+    --sombra:-1rem 0 3rem #FFF;
+
+  
+    
+} 
+
+.themadark { 
+  --fondo_body:#100e17;
+  --fondo_card: #17141d;
+  --sombra:-1rem 0 3rem #000;
+ 
+} 

@@ -1,14 +1,27 @@
 <template>
-  <v-layout wrap justify-center align-center p-0 m-0 class="fondo_main">
+  <v-layout wrap justify-center mt-7 align-center p-0 m-0 class="fondo_main">
+    <pre class="top_code">
+      temp: {{tempgrados}}
+      city: {{city}}
+      inicial: {{countrycode}}
+    </pre>
                   <v-flex md9 sm9 p-0 m-0  xs12 class="home " :elevation="4" >
                       <div class="btn__flotante">
 
                         <svg data-v-a1e948f8="" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" class="effect1"><path data-v-a1e948f8="" id="Trazado_200" data-name="Trazado 200" d="M0-10,150,0l10,150S137.643,80.734,100.143,43.234,0-10,0-10Z" transform="translate(0 10)"></path></svg>
                         <div class="clima_icono">
-
+                                
+                                    <v-img
+                                  pa-5
+                                  class=" pa-5 "
+                                  :src='`http://openweathermap.org/img/w/${icon}.png`'
+                                  max-width=""
+                                  height=""
+                                >
+                                  </v-img>
                         </div>
                            <div class="clima_grados text-center justify-center align-center">
-                              <span class="text-center">31°C</span>
+                              <span class="text-center mt-4" style="font-size:30px; ">{{tempgrados}}°</span><span class=" mt-4 letra" style="color:#FFFFFF;">°C</span>
                         </div>
                         <svg data-v-a1e948f8="" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" class="effect2"><path data-v-a1e948f8="" id="Trazado_200" data-name="Trazado 200" d="M0-10,150,0l10,150S137.643,80.734,100.143,43.234,0-10,0-10Z" transform="translate(0 10)"></path></svg>
                       </div>
@@ -38,15 +51,27 @@
                                                 <v-layout wrap justify-center align-center pa-2 ma-0 class="items_filas">
                                                   <div class="cards">
                                                      <v-layout wrap justify-center align-center pa-1 ma-0 class="container">
-                                                    <v-flex md2 sm2 pa-2  ma-0  xs12 class="col_grid_interna">
+                                                    <v-flex md2 sm2 pa-2  ma-0  xs4 class="col_grid_interna"
+                                                    style="position:absolute; left:-7px;"
+                                                    >
+                                                      
+                                                                  <v-img
+                                                                pa-5
+                                                                class=" pa-5 "
+                                                                :src='`http://openweathermap.org/img/w/${icon}.png`'
+                                                                max-width="100%"
+                                                                height=""
+                                                              >
+                                                                </v-img>
+                                                       
                                                     </v-flex>
-                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs12 class="col_grid_interna texto_clima--interno">
+                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs9 class="col_grid_interna texto_clima--interno">
                                                       <div class="peque_text--titulo">Friday
                                                         <div class="peque_text">LLuvia</div>
                                                       </div>
                                                       
                                                     </v-flex>
-                                                     <v-flex md5 sm5  ma-0  xs12 class="col_grid_interna boton_flotante ">
+                                                     <v-flex md5 sm5  ma-0  xs4 class="col_grid_interna boton_flotante ">
                                                        <div class="boton_tiempo">
                                                          <span class="linea_tiempo">31° / 27°</span>
                                                        </div>
@@ -57,15 +82,28 @@
                                                 <v-layout wrap justify-center  align-center pa-2 ma-0 class="items_filas">
                                                       <div class="cards">
                                                      <v-layout wrap justify-center align-center pa-1 ma-0 class="container">
-                                                    <v-flex md2 sm2 pa-2  ma-0  xs2 class="col_grid_interna">
+                                                    <v-flex md2 sm2 pa-2  ma-0  xs2 class="col_grid_interna"
+                                                     style="position:absolute; left:-7px;"
+                                                    >
+                                                         
+                                                                  <v-img
+                                                                pa-5
+                                                                class=" pa-5 "
+                                                                :src='`http://openweathermap.org/img/w/${icon}.png`'
+                                                                max-width="100%"
+                                                                height=""
+                                                              >
+                                                                </v-img>
+                                
+                                                      
                                                     </v-flex>
-                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs5 class="col_grid_interna texto_clima--interno">
+                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs9 class="col_grid_interna texto_clima--interno">
                                                       <div class="peque_text--titulo">Friday
                                                         <div class="peque_text">LLuvia</div>
                                                       </div>
                                                       
                                                     </v-flex>
-                                                     <v-flex md5 sm5  ma-0  xs5 class="col_grid_interna boton_flotante ">
+                                                     <v-flex md5 sm5  ma-0  xs4 class="col_grid_interna boton_flotante ">
                                                        <div class="boton_tiempo_next">
                                                          <span class="linea_tiempo">31° / 27°</span>
                                                        </div>
@@ -76,15 +114,25 @@
                                                 <v-layout wrap justify-center  align-center pa-2 ma-0 class="items_filas">
                                                      <div class="cards">
                                                      <v-layout wrap justify-center align-center pa-1 ma-0 class="container">
-                                                    <v-flex md2 sm2 pa-2  ma-0  xs12 class="col_grid_interna">
+                                                    <v-flex md2 sm2 pa-2  ma-0  xs12 class="col_grid_interna"
+                                                      style="position:absolute; left:-7px;"
+                                                    >
+
+                                                                  <v-img
+                                                                pa-5
+                                                                class=" pa-5 "
+                                                                :src='`http://openweathermap.org/img/w/${icon}.png`'
+                                                                max-width="100%"
+                                                                height=""
+                                                              >
+                                                                </v-img>
                                                     </v-flex>
-                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs12 class="col_grid_interna texto_clima--interno">
-                                                      <div class="peque_text--titulo">Friday
+                                                    <v-flex md5 sm5 ma-0 pa-1 text-left  xs9 class="col_grid_interna texto_clima--interno">
+                                                        <div class="peque_text--titulo">Friday
                                                         <div class="peque_text">LLuvia</div>
                                                       </div>
-                                                      
                                                     </v-flex>
-                                                     <v-flex md5 sm5  ma-0  xs12 class="col_grid_interna boton_flotante ">
+                                                     <v-flex md5 sm5  ma-0  xs4 class="col_grid_interna boton_flotante ">
                                                        <div class="boton_tiempo_next">
                                                          <span class="linea_tiempo">31° / 27°</span>
                                                        </div>
@@ -187,29 +235,83 @@
 
                                    <!-- Columna cuatro -->
                                   <v-flex md3 sm6 p-0 ma-0 xs12 class="col_grid">
-                                     <v-flex md12 sm12 pa-1 mt-1  xs12 class="content_col">
+                                     <v-flex md11 sm11 pa-1 mt-1  xs12 class="content_col">
                                                   <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_filas_img">
-                                                    <div class="imagen_contenedor">
-                                                        <v-img
-                                                        pa-5
-                                                        class=" pa-5 imagen_portada"
-                                                        max-width="100%"
-                                                        height="85"
-                                                      >
-                                                        </v-img>
-                                                    </div>
+                                                   <div class="imagen_contenedor--citys  " >
+                                                        <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_citys">
+                                                         
+                                                         <v-flex md4 sm4  ma-0  xs12 class="col_grid_citys">
+                                                              <div class="boton_tiempo_next">
+                                                                    <v-img
+                                                                      pa-5
+                                                                      class=" pa-5 "
+                                                                      :src='`http://openweathermap.org/img/w/${icon}.png`'
+                                                                      max-width=""
+                                                                      height=""
+                                                                    >
+                                                                      </v-img>
+                                                              </div>
+                                                         </v-flex>
+                                                        
+                                                         <v-flex md4 sm4  ma-0  xs12 class="col_grid_citys">
+                                                           <div class="text-center justify-center align-center">
+                                                                <span class="text-center">12</span><span class="letra">°C</span>
+                                                          </div>
+                                                            <v-divider
+                                                            class="mx-0 pa-1"
+                                                            inset
+                                                            vertical
+                                                          ></v-divider>
+                                                         </v-flex>
+                                                       
+                                                         <v-flex md4 sm4  ma-0 text-left xs12 class="col_grid_citys">
+                                                              <div class="peque_text--titulo text-left">Paris
+                                                               <div class="peque_text text-left">Francia</div>
+                                                              </div>
+                                                         </v-flex>
+                                                       
+                                                        </v-layout>
+                                                          <v-layout wrap justify-center  align-center pa-0 ma-0 class="items_citys--text">
+                                                           <v-flex md4 sm4  ma-0 text-center  xs12 class="col_grid_citys">
+                                                             <span class="sub--txto">humidity</span>
+                                                         </v-flex>
+                                                        
+                                                         <v-flex md4 sm4  ma-0 text-center  xs12 class="col_grid_citys">
+                                                           <span class="sub--txto">West</span>
+                                                         </v-flex>
+                                                        
+                                                         <v-flex md4 sm4  ma-0  text-center xs12 class="col_grid_citys">
+                                                           <span class="sub--txto">0.3km/h</span>
+                                                         </v-flex>
+                                                       
+                                                          </v-layout>
+                                                     </div>
+                                                   
                                                     </v-layout>
 
                                               <v-layout wrap justify-center mt-3  align-center pa-0 ma-1 class="items_filas_two">
-                                             <div class="imagen_contenedor">
+                                             <div class="ciudad_contenedor">
                                                         <v-img
                                                         pa-5
-                                                        class=" pa-5 imagen_portada"
+                                                        class=" pa-0 mt-6 city"
+                                                        src="@/assets/city.png"
                                                         max-width="100%"
-                                                        height="150"
-                                                        style=" border: rgba(102, 102, 102, 0.23) 2px dashed;"
+                                                        height="130"
+                                                        :position="false"
+                                                        style="border: rgba(102, 102, 102, 0.23) 2px dashed;"
                                                       >
-                                                      
+                                                       <v-col cols="12" sm="12" md="12">
+                                                          <v-text-field
+                                                          placeholder="+ add Location"
+                                                          v-model="city"
+                                                          v-on:keyup.enter="getClima"
+                                                          filled
+                                                          rounded
+                                                          dense
+                                                          text-center
+                                                    ></v-text-field>
+                                                       </v-col>
+                                                       
                                                         </v-img>
                                                     </div>
                                               </v-layout>
@@ -230,13 +332,96 @@
 
 export default {
   name: 'Home',
-  components: {
+  data() {
+    return {
+        city:'Bogota',
+        apykey:'6efcbafab3a9c69d94a3b57ade046d51',
+        todos:'',
+        indx:0,
+        currentTemp: '',
+        minTemp: '',
+        maxTemp:'',
+        sunrise: '',
+        sunset: '',
+        pressure: '',
+        humidity: '',
+        wind: '',
+        overcast: '',
+        icon: '',
+        tempgrados:'',
+        countrycode:''
+
+       }
+  },
+  methods:{
+    convertKelvinToCelsius(kelvin) {
+      if (kelvin < (0)) {
+        return 'below absolute zero (0 K)';
+      } else {
+        return this.tempgrados = (kelvin-273.15);
+      }
+    },
+
+    getClima(){
+      const uri = `https://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.countrycode}&appid=${this.apykey}`;
+      this.$http.get(uri).then(response => {
+       
+                  this.todos = response.data;
+                  this.currentTemp = response.data.main.temp;
+                  this.convertKelvinToCelsius(this.currentTemp);
+                  this.countrycode = response.data.sys.country;
+                  this.minTemp  = response.data.main.temp_min;
+                  this.maxTemp  = response.data.main.temp_max;
+                  this.pressure = response.data.main.pressure;
+                  this.humidity = response.data.main.humidity + '%';
+                  this.wind     = response.data.wind.speed + 'm/s';
+                  this.overcast = response.data.weather[0].description;
+                  this.icon     = response.data.weather[0].icon;
+                  this.sunrise = new Date(response.data.sys.sunrise*1000).toLocaleTimeString("en-GB").slice(0,4);
+                  this.sunset = new Date(response.data.sys.sunset*1000).toLocaleTimeString("en-GB").slice(0,4);
+                
+                console.log(this.todos)
+            }, error => {
+                console.error(error);
+            });
+   }
+
+  },
+   beforeMount() {
+    this.getClima();
    
+  },
+  mounted(){
+    this.getClima();
+    
+  },
+  computed:{
+  
   }
+
 }
 </script>
 <style lang="scss" scoped>
+@import "../sass/globals";
 
+.top_code{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.letra{
+position: relative;
+    top: -8px;
+    font-size: 11px;
+    color: #66666678;
+    margin-top: -2px;
+}
+
+.sub--txto{
+  font-family: Poppins-Regular;
+  font-size: 10px;
+  color:#e0e0e0;
+}
 .linea_tiempo{
    font-family: Poppins-SemiBold;
  
@@ -310,6 +495,24 @@ color:#666666;
   
 }
 
+.items_citys{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+
+}
+.items_citys--text{
+  width: 100%;
+  height: 30%;
+  border-radius: 10px;
+
+}
+.city_img{
+  transform: scale(0.9);
+    position: absolute;
+    bottom: 0;
+    margin-top: 19px;
+}
 .texto_clima--interno{
   right: 66px;
   justify-content: center;
@@ -333,6 +536,18 @@ color:#666666;
   height: 100%;
   position: absolute;
 }
+.col_grid_citys{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
 .content_col{
     width: 100%;
   height: 100%;
@@ -459,11 +674,39 @@ color:#666666;
   border-radius: 25px;
    box-shadow: 0px 0px 2px 0px #666666a8;
 }
+
+.imagen_contenedor--citys{
+   width: 100%;
+  height: 100%;
+  padding: 0px;
+  border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.20);
+   background: #FFFFFF;
+ 
+}
 .imagen_contenedor{
   width: 100%;
   height: 100%;
   padding: 0px;
+  border-radius: 25px;
 }
+.city{
+  position: absolute;
+  margin-top: 14px;
+   border-radius: 22px;
+
+}
+.ciudad_contenedor{
+   width: 100%;
+  height: 100%;
+  padding: 0px;
+  position: relative;
+   border-radius: 25px;
+    
+}
+// div .v-image__image .v-image__image--cover{
+//   margin-top: 14px;
+// }
 .container{
   width: 100%;
   height: 100%;
@@ -491,18 +734,26 @@ color:#666666;
     cursor: pointer;
 }
 .fondo_main{
-  background: #e1e8f0;
+  
+  background: var(--fondo_body);
   width: 100%;
   height: 100%;
 }
 .home{
-  background: #ffffff;
+  background: var(--fondo_card);
   width: 100%;
   height: 100%;
   border-radius: 25px;
   margin-top: -50px;
-  -webkit-box-shadow: 0px 1px 9px -2px #666666a8;
-  box-shadow: 0px 1px 9px -2px #666666a8;
+  // -webkit-box-shadow: 0px 1px 9px -2px #666666a8;
+  box-shadow: var(--sombra);
   
 }
+
+
+  @media (max-width: 600px) {
+    .row_grid{
+      height: 271px;
+    }
+  }
 </style>
