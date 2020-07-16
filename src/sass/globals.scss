@@ -11,44 +11,6 @@ Estilos personalizados para tablas
 
 
 
-  
-
-
-
-body, html {
-  margin: 0px; //Remueve bordes en blanco
-  padding: 0px;
-  background: var(--fondo_body);
-   //Corrige comportamiento por defecto de Vuetify de mostrar la barra de desplazamiento incluso si no hay desbordamiento
-   overflow-x: hidden;
-  font-size: 16px;
-  ::-webkit-scrollbar {display: none;}
-  @media (max-width: 600px) {
-    font-size: 0.9rem; //Disminuye el tamaño de la fuente para celulares
-     overflow-x: hidden;
-  }
-}
- ::-webkit-scrollbar {
-	display: none;
- }
-
-svg {
-  max-height: 100%;
-  max-width: 100%;
-}
- .autoscroll {
-   overflow: auto;
-}
-.instruccion {
-  font-weight: bold;
-}
-
-/**************************** CONTENIDO PARA CADA PAGINA ******************************/
-.cont_page{
-  padding: 0px 45px;
-}
-
-
 // 
 /**************************** Aumento y disminucion de las letras******************************/
 :root {
@@ -78,7 +40,8 @@ body {
   padding: 0px;
   border-radius: 20px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  // background: #ffffff;
+  border: rgba(102, 102, 102, 0.13) 2px solid;
 }
 
 .items_citys {
