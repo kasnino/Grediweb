@@ -1,19 +1,97 @@
-# gradiclima
+# GrediClima  
+# Web App consumo de API 
+#DEMO::
+# http://gullible-mouth.surge.sh/#/
 
-## Project setup
+Proyecto creado para consumir el API del clima, test de ingreso para la empresa Grediweb
+
+## Comenzando 🚀
+
 ```
-npm install
+Node 10.21.0
+```
+```
+vuetify 2.2.11
+```
+```
+Vue Resource 1.5.1
+```
+```
+@vue/cli 4.1.1
+```
 ```
 
-### Compiles and hot-reloads for development
+```
+
+Mira **Deployment** para conocer como desplegar el proyecto.
+
+
+### Pre-requisitos 📋
+
+```
+Vue JS
+```
+```
+Vuetify
+```
+```
+Webpack
+```
+```
+Sass
+```
+```
+Css
+```
+
+### Instalación 🔧
+```
+npm install -g @vue/cli
+```
+
+
+```
+vue create name_of_project
+```
+
+ejecutar
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Despliegue 📦
+
+_Agrega notas adicionales sobre como hacer deploy_
+
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+
+* [VueJs](https://vuejs.org/) - El framework web usado Frontend JS
+* [Vuetify](https://vuetifyjs.com/en/) - El framework web usado Style
+* [Sass]() - Estilos
+
+
+* **Kristian Serrano** - *Trabajo Inicial* - [villanuevand](https://github.com/kasnino)
+
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+
+## Expresiones de Gratitud 🎁
+
+*  📢
+* Invita una cerveza 🍺 
+* gracias🤓.
+* etc.
+
+
+
+---
+⌨️ con ❤️ por kasnino 😊
