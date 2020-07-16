@@ -2,7 +2,7 @@
 # Web App consumo de API 
 # https://openweathermap.org/
 
-Proyecto para creado para consumir el api del clima, test ingreso empresa Grediweb
+Proyecto creado para consumir el API del clima, test de ingreso para la empresa Grediweb
 
 ## Comenzando 🚀
 
